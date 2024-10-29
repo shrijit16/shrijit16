@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        table {
+            width: 350px;
+            height: 380px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/009/096/272/non_2x/abstract-colorful-background-with-place-for-text-blurred-gradient-backdrop-illustration-for-your-graphic-design-template-banner-poster-or-website-space-free-vector.jpg);
+            position: absolute;
+            top: 100px;
+            left: 900px;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 50vh;
+        }
+        input[type="submit"] {
+            width: 150px;
+            padding: 10px;
+            background-color: rgb(0, 72, 255);
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = "success.html"; // Redirect to the success page
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="submitForm(event)">
+        <table align="center" cellpadding="5px">
+            <tr style="font-family: sans-serif; color:#0077ff;">
+                <td><h2><b><u>Registration</u></b></h2></td>
+            </tr>
+            <tr>
+                <td>Full Name<br><input type="text" placeholder="Enter Your Name" required></td>
+            </tr>
+            <tr>
+                <td>Email-Id<br><input type="email" placeholder="Enter Email Id" required></td>
+            </tr>
+            <tr>
+                <td>Password<br><input type="password" placeholder="Enter Password" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number<br><input type="text" placeholder="Enter Mobile Number" required></td>
+            </tr>
+            <tr>
+                <td>Gender<br>
+                    <input type="radio" name="g" value="male" required>Male
+                    <input type="radio" name="g" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register →"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
